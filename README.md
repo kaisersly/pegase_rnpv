@@ -14,7 +14,6 @@ et 2/ un fichier modèle XLSX.
 Une image Docker est disponible. Pour l'utiliser :
 ```
 docker build -t pegase_rnpv .
-
 docker run --rm -p 5000:5000 pegase_rnpv
 ```
 
@@ -36,8 +35,9 @@ Puis ouvrir l'URL indiquée
 
 ## Fonctionnement
 Une fois sur la page web, deux options sont disponibles :
-1/ Lister les champs de fusion : charge un fichier CSV généré par Pégase et liste les balises utilisables dans un fichier modèle XLSX
-2/ Fusionner les fichiers : fusionne un fichier CSV généré par Pégase et un fichier modèle XLSX
+
+1. Lister les champs de fusion : charge un fichier CSV généré par Pégase et liste les balises utilisables dans un fichier modèle XLSX
+2. Fusionner les fichiers : fusionne un fichier CSV généré par Pégase et un fichier modèle XLSX
 
 ### Fichiers de démonstration
 Les fichiers de démonstration (CSV et XLSX) sont disponibles sur le forum du projet PC-SCOL. Chercher le sujet "Prototype Pégase RNPV".
