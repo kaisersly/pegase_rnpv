@@ -1,0 +1,43 @@
+<html>
+
+<body>
+    <h2>
+        Liste des champs de fusion <br>
+    </h2>
+    <p>
+        Cliquer sur un champ pour le copier dans votre presse-papier. Vous pourrez ensuite le coller dans un fichier
+        template.
+    </p>
+    <p>
+        Les champs de type "GLOBAL" peuvent être utilisés n'importe où dans une feuille. <br>
+        Les champs de type "LIGNE ETUDIANT" <strong>DOIVENT</strong> tous apparaître sur la même ligne.
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Champ</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for field, type in merge_fields %}
+            <tr>
+                <td>
+                    <input type="text" value="#{{ field }}#" style="width: 30em; text-align: right">
+                <td>{{type}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <script>
+        document.addEventListener("click", (evt) => {
+            const target = evt.target
+            if (target.tagName === "INPUT") {
+                target.select()
+                navigator.clipboard.writeText(target.value)
+            }
+        })
+    </script>
+</body>
+
+</html>
