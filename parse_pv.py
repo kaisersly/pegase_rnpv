@@ -30,7 +30,9 @@ def parse_pv(path: str) -> PV:
     for i in range(0, len(champs)):
         code = codes[i]
         if code:
-            latest_code, latest_libelle = code.split(" - ")
+            splitted_code = code.split(" - ")
+            latest_code = splitted_code.pop(0)
+            latest_libelle = " - ".join(splitted_code)
             if formation_code is None:
                 formation_code = latest_code
         session = sessions[i]
