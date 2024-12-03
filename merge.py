@@ -1,3 +1,10 @@
+#
+# Auteur : sylvain.kieffer@univ-paris13.fr
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# License-Filename: LICENSE
+#
+
 from collections import defaultdict
 from copy import copy
 from dataclasses import dataclass

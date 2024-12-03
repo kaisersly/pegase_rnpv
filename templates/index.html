@@ -1,15 +1,28 @@
+<!--
+Auteur : sylvain.kieffer@univ-paris13.fr
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+License-Filename: LICENSE
+-->
+
 <html>
-
-<body>
+  <body>
     <form method="post" enctype="multipart/form-data">
-        PV (.csv) <input type="file" name="pv" accept="text/csv">
-        <br>
-        Template (.xlsx) <input type="file" name="template"
-            accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
-        <br>
-        <button type="submit" name="action" value="list-merge-fields">Lister les champs de fusion</button>
-        <button type="submit" name="action" value="merge">Fusionner les fichiers</button>
+      PV (.csv) <input type="file" name="pv" accept="text/csv" />
+      <br />
+      Template (.xlsx)
+      <input
+        type="file"
+        name="template"
+        accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      />
+      <br />
+      <button type="submit" name="action" value="list-merge-fields">
+        Lister les champs de fusion
+      </button>
+      <button type="submit" name="action" value="merge">
+        Fusionner les fichiers
+      </button>
     </form>
-</body>
-
+  </body>
 </html>

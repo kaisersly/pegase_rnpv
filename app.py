@@ -1,3 +1,10 @@
+#
+# Auteur : sylvain.kieffer@univ-paris13.fr
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# License-Filename: LICENSE
+#
+
 from tempfile import NamedTemporaryFile
 from flask import Flask, request, render_template, send_file
 
